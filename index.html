@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivanand Biradar · Generative AI Engineer</title>
+  <meta name="description" content="Shivanand Biradar, Generative AI Engineer building production Agentic RAG systems, LLM document intelligence pipelines and AI agents on Azure." />
+  <meta name="theme-color" content="#05060f" />
+  <meta property="og:title" content="Shivanand Biradar · Generative AI Engineer" />
+  <meta property="og:description" content="Agentic RAG · LLM pipelines · AI agents. Ask my resume anything." />
+  <meta property="og:image" content="assets/img/profile.jpg" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2305060f'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='%2322d3ee' font-family='monospace' font-weight='bold'>SB</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Boot sequence -->
+  <div id="boot" aria-hidden="true">
+    <pre id="boot-log"></pre>
+    <button id="boot-skip" type="button">skip ›</button>
+  </div>
+
+  <canvas id="neural-bg" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>SB<span class="logo-bracket">/&gt;</span></a>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#experience">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Stack</a></li>
+        <li><a href="#console" class="nav-ai">Ask&nbsp;AI</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow mono"><span class="pulse-dot"></span> agent online · Bengaluru, India</p>
+        <h1 class="glitch" data-text="Shivanand Biradar">Shivanand Biradar</h1>
+        <p class="hero-role mono">&gt; <span id="typed"></span><span class="caret">▍</span></p>
+        <p class="hero-sub">I turn LLM proof-of-concepts into <strong>enterprise products</strong>: Agentic RAG, document intelligence pipelines and AI agents that ship with numbers attached.</p>
+        <div class="hero-cta">
+          <a href="#console" class="btn btn-primary magnetic">Ask my AI agent <span aria-hidden="true">→</span></a>
+          <a href="Shivanand_Biradar_Resume_07_19.pdf" class="btn btn-ghost magnetic" download>Download resume</a>
+        </div>
+        <ul class="hero-social">
+          <li><a href="https://github.com/Shivanand122" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/shivanand-biradar-8478331b8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a></li>
+          <li><a href="mailto:shivabiradar122@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.3-.5 7.7 6.16L19.7 5H4.3ZM20 6.7l-7.38 5.9a1 1 0 0 1-1.24 0L4 6.7v11.8c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V6.7Z"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit" aria-hidden="true">
+          <span class="orbit-chip" style="--i:0">RAG</span>
+          <span class="orbit-chip" style="--i:1">GraphRAG</span>
+          <span class="orbit-chip" style="--i:2">Azure OpenAI</span>
+          <span class="orbit-chip" style="--i:3">Agents</span>
+          <span class="orbit-chip" style="--i:4">Semantic Kernel</span>
+          <span class="orbit-chip" style="--i:5">.NET</span>
+          <span class="orbit-chip" style="--i:6">Python</span>
+          <span class="orbit-chip" style="--i:7">Vision LLMs</span>
+        </div>
+        <div class="photo-frame tilt">
+          <img src="assets/img/profile.jpg" alt="Portrait of Shivanand Biradar" width="900" height="900" />
+          <div class="scanline" aria-hidden="true"></div>
+          <div class="photo-hud mono" aria-hidden="true">
+            <span>ID: SHIVA.AI</span>
+            <span>STATUS: <em>BUILDING</em></span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#impact" class="scroll-hint mono" aria-label="Scroll down">scroll<span></span></a>
+    </section>
+
+    <!-- IMPACT -->
+    <section id="impact" class="section">
+      <header class="section-head reveal">
+        <span class="mono section-index">01 / impact</span>
+        <h2>Numbers, not <span class="grad">buzzwords</span>.</h2>
+      </header>
+      <div class="stats" id="stats"></div>
+      <div class="pipeline reveal" aria-label="How I build GenAI systems">
+        <div class="pipe-step"><b>Ingest</b><small>SharePoint · Graph API · OCR</small></div>
+        <div class="pipe-step"><b>Chunk</b><small>header-aware · cited</small></div>
+        <div class="pipe-step"><b>Embed</b><small>vector · graph</small></div>
+        <div class="pipe-step"><b>Retrieve</b><small>hybrid search</small></div>
+        <div class="pipe-step"><b>Reason</b><small>agents · CoT</small></div>
+        <div class="pipe-step"><b>Ship</b><small>AKS · Functions</small></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <header class="section-head reveal">
+        <span class="mono section-index">02 / journey</span>
+        <h2>From intern to <span class="grad">AI lead</span>.</h2>
+      </header>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <header class="section-head reveal">
+        <span class="mono section-index">03 / shipped</span>
+        <h2>Built for business. <span class="grad">Not just a demo.</span></h2>
+      </header>
+      <div class="bento" id="bento"></div>
+      <p class="note mono reveal"><span aria-hidden="true">ⓘ</span> These are enterprise projects at FNFI. Descriptions reflect resume-level contributions; internal code, documents and live systems are not exposed.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <header class="section-head reveal">
+        <span class="mono section-index">04 / stack</span>
+        <h2>The <span class="grad">toolkit</span>.</h2>
+      </header>
+      <div class="skills" id="skills-grid"></div>
+      <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+    </section>
+
+    <!-- AI CONSOLE -->
+    <section id="console" class="section">
+      <header class="section-head reveal">
+        <span class="mono section-index">05 / interact</span>
+        <h2>Ask my resume. <span class="grad">Trace the answer.</span></h2>
+        <p class="section-sub">A small RAG agent that runs entirely in your browser, grounded only on my resume. Watch each answer move through the retrieval pipeline. Prefer a shell? Switch to the terminal.</p>
+      </header>
+
+      <div class="console reveal">
+        <div class="console-bar">
+          <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="tabs" role="tablist">
+            <button role="tab" class="tab active" aria-selected="true" data-tab="chat">shiva.ai — chat</button>
+            <button role="tab" class="tab" aria-selected="false" data-tab="term">bash — terminal</button>
+          </div>
+        </div>
+
+        <div class="console-body">
+          <div class="pane active" id="pane-chat" role="tabpanel">
+            <div class="chat-log" id="chat-log" aria-live="polite"></div>
+            <div class="chat-suggest" id="chat-suggest"></div>
+            <form class="chat-form" id="chat-form" autocomplete="off">
+              <input id="chat-input" type="text" maxlength="200" placeholder="Ask anything about Shivanand…" aria-label="Ask a question" />
+              <button type="submit" aria-label="Send">↵</button>
+            </form>
+          </div>
+
+          <div class="pane" id="pane-term" role="tabpanel">
+            <div class="term" id="term">
+              <div id="term-out"></div>
+              <form id="term-form" class="term-line" autocomplete="off">
+                <label for="term-input" class="prompt">visitor@shiva:~$</label>
+                <input id="term-input" type="text" maxlength="120" spellcheck="false" aria-label="Terminal input" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="note mono reveal"><span aria-hidden="true">ⓘ</span> Real local keyword retrieval (BM25) over resume passages with extractive answers, not a live LLM. No API key, no backend, and your questions never leave the browser.</p>
+    </section>
+
+    <!-- EDUCATION + ACHIEVEMENTS -->
+    <section id="recognition" class="section">
+      <header class="section-head reveal">
+        <span class="mono section-index">06 / recognition</span>
+        <h2>Learned. <span class="grad">Recognised.</span></h2>
+      </header>
+      <div class="recog">
+        <article class="edu-card reveal" id="edu"></article>
+        <div class="awards" id="awards"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="contact-inner reveal">
+        <span class="mono section-index">07 / connect</span>
+        <h2 class="contact-title">Let's build something <span class="grad">intelligent</span>.</h2>
+        <p class="section-sub">Open to GenAI engineering roles, collaborations and conversations about agents and RAG.</p>
+        <button class="email-big magnetic" id="copy-email" type="button">
+          <span>shivabiradar122@gmail.com</span>
+          <small class="mono" id="copy-hint">click to copy</small>
+        </button>
+        <ul class="contact-links">
+          <li><a href="mailto:shivabiradar122@gmail.com">Email</a></li>
+          <li><a href="tel:+917022950940">+91 7022950940</a></li>
+          <li><a href="https://www.linkedin.com/in/shivanand-biradar-8478331b8/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/Shivanand122" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+          <li><a href="Shivanand_Biradar_Resume_07_19.pdf" download>Resume PDF ↓</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Shivanand Biradar</span>
+    <span>handcrafted · no frameworks · <kbd>/</kbd> to ask AI</span>
+  </footer>
+
+  <button id="motion-toggle" class="motion-toggle mono" type="button" aria-pressed="false">❚❚ pause motion</button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/agent.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

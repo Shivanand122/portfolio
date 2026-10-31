@@ -1,0 +1,206 @@
+// Single source of truth for the portfolio, derived from resume.tex
+window.PORTFOLIO = {
+  name: 'Shivanand Biradar',
+  title: 'Generative AI Engineer',
+  location: 'Bengaluru, India',
+  phone: '+91 7022950940',
+  email: 'shivabiradar122@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/shivanand-biradar-8478331b8/',
+  github: 'https://github.com/Shivanand122',
+  resume: 'Shivanand_Biradar_Resume_07_19.pdf',
+
+  roles: [
+    'Generative AI Engineer',
+    'Agentic RAG Systems',
+    'LLM Document Intelligence',
+    'AI Code Review Agents',
+    'Prompt Engineering',
+  ],
+
+  boot: [
+    '<span class="ok">[  OK  ]</span> Mounting /dev/creativity',
+    '<span class="ok">[  OK  ]</span> Loading 3 years of GenAI experience',
+    '<span class="ok">[  OK  ]</span> Indexing resume chunks into vector store',
+    '<span class="ok">[  OK  ]</span> Warming up Azure OpenAI deployments',
+    '<span class="ok">[  OK  ]</span> Spawning agent: shiva.ai',
+    '<span class="hl">&gt;</span> Welcome. Rendering portfolio_',
+  ],
+
+  stats: [
+    { value: 3, suffix: '+', label: 'Years shipping GenAI' },
+    { value: 75, suffix: '%', label: 'Faster document processing' },
+    { value: 85, suffix: '%', label: 'Lower processing cost' },
+    { value: 99, suffix: '%', label: 'Extraction accuracy' },
+    { value: 2000, suffix: '+', label: 'Emails automated daily' },
+    { value: 1000, suffix: '+', label: 'Documents indexed for RAG' },
+  ],
+
+  experience: [
+    {
+      role: 'Software Engineer',
+      company: 'Fidelity National Financial (FNFI)',
+      location: 'Bengaluru, India',
+      period: 'Mar 2026 – Present',
+      current: true,
+      points: [
+        { title: 'NC_AI ChatBot (Agentic RAG)', text: 'Led a team of 4 to deliver a production RAG chatbot for underwriters over **1,000+ indexed documents**. Header-based chunking with page/section references, SharePoint integration with nightly refresh via Azure Function Apps, cost-effective SQLite vector DB, and AKS deployment with Azure AD certificate auth.' },
+        { title: 'ClaimsDocs Migration (Desktop → Angular/.NET 10)', text: 'Sole implementer of a full desktop-to-web migration using the **BMAD** spec-driven framework. PRD to production-ready code in **one month** (vs. 3+ months for a 2–3 person team).' },
+      ],
+    },
+    {
+      role: 'Associate Software Engineer',
+      company: 'Fidelity National Financial (FNFI)',
+      location: 'Bengaluru, India',
+      period: 'Mar 2024 – Feb 2026',
+      points: [
+        { title: 'LLM-Based Field Extraction (AFR Replacement)', text: 'Replaced Azure Document Intelligence with an LLM pipeline (conditional OCR + vision models). Processing time **−75%** (60s → 15s), cost **−85%**, accuracy **80% → 99%**, with feedback loops for continuous improvement.' },
+        { title: 'Agentic Code Review System', text: 'API-driven agent triggered from Azure DevOps on PR creation; LLM-powered diff analysis posting **severity-categorised inline comments** (critical / major / minor) plus a PR summary.' },
+        { title: 'Automated Mail Processing (C_Metro)', text: 'GenAI pipeline handling **2,000+ daily emails**, cutting per-email effort from **15 min to 30 sec**: MS Graph ingestion, LLM key-detail extraction, attachment classification and structured storage.' },
+        { title: 'Hybrid RAG (PI Phase 3)', text: 'Spearheaded **GraphRAG in .NET** for the internal AI platform, designing a custom Hybrid RAG architecture with Azure AI Search as the vector DB.' },
+      ],
+    },
+    {
+      role: 'Software Engineer Intern',
+      company: 'Fidelity National Financial (FNFI)',
+      location: 'Bengaluru, India',
+      period: 'Sep 2023 – Feb 2024',
+      points: [
+        { text: 'Built the company\'s **first internal AI platform (Personalized Intelligence)**: chat/collaboration UI in Blazor, document RAG and Bing Search API integration. Built a foundation in prompt engineering and Semantic Kernel.' },
+      ],
+    },
+    {
+      role: 'Software Developer Intern',
+      company: 'Insti Profile (EdTech Startup)',
+      location: 'Bengaluru, India',
+      period: 'May 2023 – Aug 2023',
+      points: [
+        { text: 'Developed UI components and backend APIs for a cross-college student collaboration platform with project listing, contributor discovery and skill-based matching.' },
+      ],
+    },
+  ],
+
+  projects: [
+    {
+      name: 'NC_AI ChatBot',
+      flow: 'Knowledge → Grounded answers',
+      tag: 'Agentic RAG · Production',
+      featured: true,
+      desc: 'An underwriter-facing chatbot that answers from **1,000+ indexed documents** and cites the exact page and section. SharePoint content is refreshed nightly, embeddings live in a lean SQLite vector store, and the service runs on AKS behind Azure AD certificate auth.',
+      metrics: [{ v: '1,000+', l: 'docs indexed' }, { v: '4', l: 'engineers led' }, { v: 'Nightly', l: 'auto-sync' }],
+      stack: ['Azure OpenAI', 'SQLite Vector DB', 'SharePoint', 'Azure Functions', 'AKS', 'Azure AD'],
+    },
+    {
+      name: 'LLM Field Extraction',
+      flow: 'Documents → Structured data',
+      tag: 'Document Intelligence',
+      desc: 'Replaced Azure Document Intelligence (AFR) with conditional OCR + vision LLMs and feedback loops.',
+      metrics: [{ v: '−75%', l: 'time' }, { v: '−85%', l: 'cost' }, { v: '99%', l: 'accuracy' }],
+      stack: ['Vision LLMs', 'Conditional OCR', 'Feedback Loops'],
+    },
+    {
+      name: 'Agentic Code Reviewer',
+      flow: 'Pull request → Actionable review',
+      tag: 'AI Agent · DevOps',
+      desc: 'Fires on every PR in Azure DevOps, analyses the diff and posts severity-tagged inline comments plus a summary.',
+      metrics: [{ v: 'Every', l: 'PR reviewed' }, { v: '3', l: 'severity levels' }],
+      stack: ['Azure DevOps', 'LLM', 'REST API'],
+    },
+    {
+      name: 'Automated Mail Processing',
+      flow: 'Emails → Classified workflows',
+      tag: 'GenAI Pipeline',
+      desc: 'Ingests mailboxes via MS Graph, extracts key details with LLMs, classifies attachments and stores tagged records.',
+      metrics: [{ v: '2,000+', l: 'emails / day' }, { v: '15m→30s', l: 'per email' }],
+      stack: ['MS Graph API', 'LLM', 'Document Intelligence', 'SQL'],
+    },
+    {
+      name: 'Hybrid GraphRAG',
+      flow: 'Relationships + vectors → Context',
+      tag: 'R&D · PI Phase 3',
+      desc: 'Brought GraphRAG to .NET despite ecosystem gaps by designing a custom hybrid graph + vector retrieval architecture.',
+      metrics: [{ v: 'Graph', l: '+ vector' }, { v: '.NET', l: 'native' }],
+      stack: ['.NET', 'GraphRAG', 'Azure AI Search'],
+    },
+    {
+      name: 'ClaimsDocs Migration',
+      flow: 'Desktop app → Angular + .NET 10',
+      tag: 'AI-Assisted Engineering',
+      featured: true,
+      desc: 'A full desktop-to-web rewrite into **Angular + .NET 10**, delivered solo with the BMAD spec-driven framework. AI agents produced code that needed minimal review, going from PRD to production-ready in **one month** against a 3+ month estimate for a 2–3 person team.',
+      metrics: [{ v: '1 mo', l: 'vs 3+ months' }, { v: 'Solo', l: 'vs 2–3 devs' }, { v: 'PRD→Prod', l: 'end-to-end' }],
+      stack: ['Angular', '.NET 10', 'BMAD', 'Prompt Engineering'],
+    },
+    {
+      name: 'Personalized Intelligence',
+      flow: 'Documents + web → Answers',
+      tag: 'First AI Platform @ FNFI',
+      desc: 'The company\'s first internal AI platform: chat & collaboration UI, document RAG and web search.',
+      metrics: [{ v: '#1', l: 'internal AI platform' }],
+      stack: ['Blazor', 'Semantic Kernel', 'RAG', 'Bing Search API'],
+    },
+  ],
+
+  skills: [
+    { name: 'GenAI & LLMs', icon: 'AI', items: ['RAG', 'GraphRAG', 'Agentic Frameworks', 'Prompt Engineering', 'Semantic Kernel', 'LLM Orchestration', 'Vision Models', 'Embeddings', 'Chain-of-Thought', 'Few-shot Prompting'] },
+    { name: 'AI/ML & Cloud', icon: 'AZ', items: ['Azure OpenAI', 'Azure Document Intelligence', 'Azure AI Search', 'Vector Databases', 'OCR', 'Azure Function Apps', 'Azure Cognitive Services', 'Azure DevOps', 'AKS'] },
+    { name: 'Languages & Frameworks', icon: '</>', items: ['Python', 'C#', '.NET', 'Angular', 'Blazor', 'SQL', 'React', 'REST APIs', 'Django'] },
+    { name: 'Tools & Libraries', icon: '{ }', items: ['Git', 'MS Graph API', 'Aspose', 'Bing Search API', 'Docker', 'SharePoint', 'BMAD Framework'] },
+  ],
+
+  education: {
+    school: 'RV College of Engineering',
+    degree: 'B.E. in Information Science and Engineering',
+    period: '2019 – 2023',
+    cgpa: '7.75',
+    location: 'Bengaluru, India',
+  },
+
+  achievements: [
+    { title: 'Pat on the Back & Smart Techie', text: 'Multiple awards at FNFI for delivery and technical excellence.' },
+    { title: 'Achiever → High Achiever', text: 'Consecutive top ratings in PMCR performance reviews.' },
+    { title: 'Hackathon Builder', text: 'Implemented an Automated Underwriting System at the company hackathon.' },
+    { title: 'GenAI Evangelist', text: 'Runs GenAI knowledge-sharing sessions for BAs and cross-functional teams.' },
+  ],
+
+  agent: {
+    greeting: 'Hi! I\'m **shiva.ai**, a small retrieval agent grounded only on Shivanand\'s resume. Ask me about his projects, impact, skills or how to reach him.',
+    self: 'I\'m **shiva.ai**, a browser-side retrieval agent. I tokenize your question, run BM25 over chunks of Shivanand\'s resume, keep the best evidence and answer with citations. No API keys, and nothing leaves your device.\n\nShivanand himself is a **Generative AI Engineer** at FNFI who builds production RAG systems and AI agents.',
+    thanks: 'Anytime! If you\'d like to talk to the real Shivanand, he\'s at **shivabiradar122@gmail.com**.',
+    fallback: 'I couldn\'t find grounded evidence for that in Shivanand\'s resume, and I don\'t make things up.\n\nTry asking about **GraphRAG**, **the code review agent**, **his impact numbers**, **skills**, or **how to contact him**.',
+    suggestions: [
+      'What is his biggest impact?',
+      'Tell me about the NC_AI ChatBot',
+      'How did he use GraphRAG?',
+      'What is his tech stack?',
+      'Why should we hire him?',
+      'How can I contact him?',
+    ],
+  },
+
+  // Retrieval corpus for the in-browser agent (keywords are weighted higher than body text)
+  knowledge: [
+    { id: 'summary', source: 'Summary', title: 'Profile summary overview', keywords: 'who introduce introduction summary profile background overview yourself bio describe person engineer', answer: 'Shivanand is a **Generative AI Engineer** with **3 years** of experience designing and deploying production-grade GenAI applications: Agentic RAG systems, LLM-powered document intelligence pipelines, automated code-review agents and multi-model orchestration workflows.\n\nHe specialises in turning PoCs into enterprise products, e.g. **75%** faster document processing and **85%** cost savings by replacing legacy solutions with LLM-based architectures.' },
+    { id: 'current', source: 'Experience · Software Engineer', title: 'Current role job', keywords: 'current currently now present role job position company employer work working title fnfi fidelity national financial', answer: 'He\'s currently a **Software Engineer at Fidelity National Financial (FNFI)** in Bengaluru (since **Mar 2026**). He leads the **NC_AI ChatBot** (Agentic RAG) team and single-handedly delivered the **ClaimsDocs** desktop-to-web migration.' },
+    { id: 'career', source: 'Experience', title: 'Career timeline experience history', keywords: 'experience career timeline history years companies worked previous past journey roles intern internship progression promotion', answer: 'About **3 years** at FNFI, plus a startup internship:\n• **Software Engineer**, FNFI (Mar 2026 – Present)\n• **Associate Software Engineer**, FNFI (Mar 2024 – Feb 2026)\n• **Software Engineer Intern**, FNFI (Sep 2023 – Feb 2024)\n• **Software Developer Intern**, Insti Profile (May 2023 – Aug 2023)' },
+    { id: 'ncai', source: 'Experience · NC_AI ChatBot', title: 'NC_AI ChatBot agentic RAG underwriters', keywords: 'nc_ai nc ai chatbot chat bot underwriter underwriting agentic rag sharepoint sqlite vector aks azure ad certificate chunking chunk header citation lead team production', answer: '**NC_AI ChatBot (Agentic RAG)**: he led a team of 4 to ship a production RAG chatbot for underwriters over **1,000+ indexed documents**.\n• Header-based chunking with page/section references (answers cite their source)\n• SharePoint integration, refreshed nightly via **Azure Function Apps**\n• Cost-effective **SQLite vector DB**\n• Deployed on **AKS** with Azure AD certificate auth' },
+    { id: 'claims', source: 'Experience · ClaimsDocs Migration', title: 'ClaimsDocs migration Angular .NET 10 BMAD', keywords: 'claimsdocs claims docs migration migrate angular dotnet 10 bmad spec driven desktop web rewrite ai assisted development solo fast speed productivity', answer: '**ClaimsDocs Migration**: as the sole implementer, he moved a desktop app to **Angular + .NET 10** using the **BMAD** spec-driven framework, going from PRD to production-ready code in **one month** (vs. 3+ months for a 2–3 person team). The project sharpened his AI-assisted development and prompt engineering for code generation that needs minimal review.' },
+    { id: 'afr', source: 'Experience · LLM Field Extraction', title: 'LLM based field extraction AFR replacement', keywords: 'afr field extraction document intelligence ocr vision model accuracy cost time faster cheaper replace legacy pipeline feedback form recognizer', answer: '**LLM-Based Field Extraction (AFR replacement)**: he replaced Azure Document Intelligence with an LLM pipeline using conditional OCR + vision models.\n• Processing time: **60s → 15s (−75%)**\n• Cost: **−85%**\n• Accuracy: **80% → 99%**\nFeedback loops keep improving it over time.' },
+    { id: 'review', source: 'Experience · Agentic Code Review', title: 'Agentic code review system', keywords: 'code review reviewer pr pull request azure devops diff comment inline severity critical major minor agent automation', answer: '**Agentic Code Review System**: an API-driven agent triggered from **Azure DevOps** whenever a PR is created. It runs LLM-powered diff analysis, posts **severity-categorised inline comments** (critical / major / minor) and writes a PR summary, so reviews move faster.' },
+    { id: 'mail', source: 'Experience · Automated Mail Processing', title: 'Automated mail processing C_Metro', keywords: 'mail email emails inbox c_metro metro graph api attachment classification extraction automation pipeline daily', answer: '**Automated Mail Processing (C_Metro)**: a GenAI pipeline handling **2,000+ emails a day**, cutting per-email effort from **15 minutes to 30 seconds**. It covers MS Graph API ingestion, LLM-based key-detail extraction, attachment classification with Document Intelligence and structured DB storage with category tagging.' },
+    { id: 'graphrag', source: 'Experience · Hybrid RAG (PI Phase 3)', title: 'Hybrid RAG GraphRAG PI Phase 3', keywords: 'graphrag graph rag hybrid knowledge pi phase 3 dotnet azure ai search vector architecture design', answer: '**Hybrid RAG (PI Phase 3)**: he spearheaded **GraphRAG in .NET** for FNFI\'s internal AI platform, Personalized Intelligence. Because the .NET ecosystem lacked mature GraphRAG support, he designed a custom **Hybrid RAG** architecture with **Azure AI Search** as the vector DB.' },
+    { id: 'pi', source: 'Experience · Software Engineer Intern', title: 'Personalized Intelligence first AI platform', keywords: 'personalized intelligence pi platform first internal blazor bing search intern internship semantic kernel collaboration', answer: '**Personalized Intelligence**: as an intern he built FNFI\'s **first internal AI platform**, with a chat/collaboration UI in **Blazor**, document RAG and **Bing Search API** integration. That\'s where he built his foundation in prompt engineering and **Semantic Kernel**.' },
+    { id: 'insti', source: 'Experience · Insti Profile', title: 'Insti Profile EdTech startup internship', keywords: 'insti profile startup edtech student college collaboration intern internship matching ui backend', answer: '**Insti Profile (EdTech startup)**: from May to Aug 2023 he built UI components and backend APIs for a cross-college student collaboration platform with project listings, contributor discovery and skill-based matching.' },
+    { id: 'skills', source: 'Technical Skills', title: 'Technical skills tech stack', keywords: 'skill skills tech stack technology technologies tools language languages framework frameworks expertise proficient know python csharp dotnet angular react blazor sql django docker git', answer: '**GenAI & LLMs:** RAG, GraphRAG, Agentic Frameworks, Prompt Engineering, Semantic Kernel, LLM Orchestration, Vision Models, Embeddings, CoT & Few-shot\n**AI/ML & Cloud:** Azure OpenAI, Document Intelligence, AI Search, Vector DBs, OCR, Function Apps, Cognitive Services, Azure DevOps, AKS\n**Languages & Frameworks:** Python, C#, .NET, Angular, Blazor, SQL, React, REST APIs, Django\n**Tools:** Git, MS Graph API, Aspose, Bing Search API, Docker, SharePoint, BMAD' },
+    { id: 'azure', source: 'Technical Skills · Cloud', title: 'Azure cloud experience', keywords: 'azure cloud microsoft openai function apps aks kubernetes devops cognitive services ai search deploy deployment', answer: 'He\'s deeply Azure-native: **Azure OpenAI**, **Document Intelligence**, **AI Search** (as a vector DB), **Function Apps** (nightly SharePoint sync), **Cognitive Services**, **Azure DevOps** (code-review agent) and **AKS** (NC_AI ChatBot, secured with Azure AD certificate auth).' },
+    { id: 'rag', source: 'Projects · RAG', title: 'RAG retrieval augmented generation expertise', keywords: 'rag retrieval augmented generation vector embedding embeddings chunking chunk search semantic database index indexing', answer: 'RAG runs through his whole career:\n• **NC_AI ChatBot**: agentic RAG over 1,000+ docs, header-based chunking with page/section citations, SQLite vector DB\n• **PI Phase 3**: custom **Hybrid GraphRAG** in .NET with Azure AI Search\n• **Personalized Intelligence**: document RAG in FNFI\'s first AI platform' },
+    { id: 'agents', source: 'Projects · Agents', title: 'AI agents agentic systems', keywords: 'agent agents agentic autonomous orchestration multi model workflow automation', answer: 'His agentic work includes the **NC_AI** agentic RAG chatbot, an **autonomous code-review agent** wired into Azure DevOps PRs, multi-model orchestration in the **LLM extraction** and **mail processing** pipelines, and **BMAD** spec-driven AI development for ClaimsDocs.' },
+    { id: 'prompt', source: 'Technical Skills · GenAI', title: 'Prompt engineering', keywords: 'prompt prompting engineering chain thought few shot cot semantic kernel llm model gpt', answer: 'Prompt engineering is a core skill: **Chain-of-Thought** and **few-shot** prompting, **Semantic Kernel** orchestration, vision-model prompting for document extraction, and AI-assisted development (BMAD) where prompts produce code that needs minimal review.' },
+    { id: 'impact', source: 'Summary · Impact', title: 'Impact metrics results achievements numbers', keywords: 'impact biggest best result results metric metrics number numbers saving savings proud accomplishment value business roi', answer: 'Headline impact:\n• **−75%** document processing time (60s → 15s)\n• **−85%** processing cost, accuracy **80% → 99%**\n• **2,000+ emails/day** automated, **15 min → 30 sec** each\n• **1,000+ documents** behind a production RAG chatbot\n• A **3-month** migration delivered solo in **1 month**' },
+    { id: 'hire', source: 'Summary · Strengths', title: 'Why hire strengths', keywords: 'why hire hiring strength strengths fit candidate value unique stand out recommend good', answer: 'Why Shivanand?\n• **He ships**: PoCs turned into enterprise products\n• **Measurable impact**: 75% faster, 85% cheaper, 99% accurate\n• **Full-stack + AI**: Python, C#/.NET, Angular, Blazor on Azure AI\n• **Leads and teaches**: team lead and GenAI knowledge-sharer\n• **Recognised**: Pat on the Back, Smart Techie, High Achiever awards' },
+    { id: 'lead', source: 'Experience · Leadership', title: 'Leadership mentoring teamwork', keywords: 'lead leader leadership team manage mentor mentoring teach teaching knowledge sharing session sessions ownership', answer: 'Leadership signals:\n• Led a **team of 4** on the NC_AI ChatBot\n• **Sole owner** of the ClaimsDocs migration\n• **Spearheaded** GraphRAG for PI Phase 3\n• Runs **GenAI knowledge-sharing sessions** for BAs and cross-functional teams' },
+    { id: 'edu', source: 'Education', title: 'Education degree college', keywords: 'education college university degree study studied graduate graduation rvce rv engineering cgpa gpa bachelor school', answer: '**B.E. in Information Science and Engineering** from **RV College of Engineering**, Bengaluru (2019 – 2023), CGPA **7.75**.' },
+    { id: 'awards', source: 'Achievements', title: 'Awards achievements recognition', keywords: 'award awards achievement achievements recognition hackathon pat back smart techie achiever pmcr rating underwriting', answer: '• Multiple **Pat on the Back** and **Smart Techie** awards at FNFI\n• Consecutive **Achiever** and **High Achiever** ratings in PMCR reviews\n• Built an **Automated Underwriting System** at the company hackathon\n• Runs **GenAI knowledge-sharing sessions** for BAs and cross-functional teams' },
+    { id: 'contact', source: 'Contact', title: 'Contact details', keywords: 'contact reach email mail phone number call hire connect linkedin github message touch talk', answer: '• Email: **shivabiradar122@gmail.com**\n• Phone: **+91 7022950940**\n• LinkedIn: linkedin.com/in/shivanand-biradar\n• GitHub: github.com/Shivanand122\nThe Contact section below has one-click links.' },
+    { id: 'location', source: 'Header', title: 'Location', keywords: 'location located based live city country bengaluru bangalore india relocate remote', answer: 'He\'s based in **Bengaluru, India**.' },
+  ],
+};
